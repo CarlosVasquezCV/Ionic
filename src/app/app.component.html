@@ -1,0 +1,52 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar color="success">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+
+        <ion-menu-toggle>
+        <ion-item routerLink="inicio">
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+     <ion-menu-toggle>
+        <ion-item routerLink="mis-proyectos">
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Mis proyectos</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+     <ion-menu-toggle>
+        <ion-item routerLink="multimedia">
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Multimedia</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="contactos">
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Contactos</ion-label>
+        </ion-item>
+      </ion-menu-toggle> 
+      </ion-list>
+    </ion-content>
+
+    <ion-footer>
+      <ion-toolbar color="success">
+        <ion-button [routerLink]="['/login']" slot="end">Cerrar Sesión</ion-button>
+    
+      </ion-toolbar>
+    </ion-footer>
+  </ion-menu>
+
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
+

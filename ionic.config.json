@@ -1,0 +1,7 @@
+{
+  "name": "MisDatos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
